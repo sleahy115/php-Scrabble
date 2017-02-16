@@ -16,7 +16,7 @@ require_once "src/Scrabble.php";
             $this->AssertEquals(1, $result);
         }
 
-        function test_go()
+        function test_no()
         {
           $test_arrays = new Scrabble;
           //Arrange
@@ -27,6 +27,19 @@ require_once "src/Scrabble.php";
           $result = $test_arrays->wordScore($input);
           //Assert
           $this->AssertEquals(2, $result);
+
+        }
+        function test_go()
+        {
+          $test_arrays = new Scrabble;
+          //Arrange
+          $input = "go";
+
+          $test_arrays->wordScore($input);
+          //Act
+          $result = $test_arrays->wordScore($input);
+          //Assert
+          $this->AssertEquals(3, $result);
 
         }
 

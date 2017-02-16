@@ -8,8 +8,11 @@
     //   $wordArray = array_intersect($word_letters, $one_point_array);
     //   return $wordArray;
     $score = preg_match_all('/[A, E, I, O, U, L, N, R, S, T]/i',$word);
-      $score += preg_match_all('/[D, G]/i',$word);
-    return $score;
+    $total = $score*1;
+    $score = preg_match_all('/[D, G]/i',$word);
+    $total += $score*2;
+
+    return $total;
     }
   }
  ?>

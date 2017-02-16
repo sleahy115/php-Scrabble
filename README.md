@@ -43,17 +43,16 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 * Phase 2 - Scrabble class: exceptions property and empty constructor, getter, setter and wordScore() methods.
 * Phase 3 - Build Test cases and implement Scrabble methods
 
-| Behavior - What does wordScore() return?                      | Input                       | Output                     |
+| Behavior - Our Program should Handle?                     | Input                       | Output                     |
 |----------------------------------------------------------------|-----------------------------|----------------------------|
-|  1.User enters word                                              |  "hello"                    | ["h","e", "l","l","o" ] |
-|  2.Convert word array to upper case                              |  ["h","e", "l","l","o" ]   |  ["H","E", "L","L","O" ] |
-|  3.Check word array against onePointArray                        |  ["h","e", "l","l","o"] [A, E, I, O, U, L, N, R, S, T]  |  ["E","L","L","O"] |
-|  4.Count number of matches                                       |  ["E","L","L","O"]                     |   4                         |
-|  5.Set score                                                     |  4              | 4|
-|  6.Repeat steps 3-5 for the rest of the point arrays  and output total score           | 4 + 4           |8|
+|  One letter one point word     |  "a"                    |  Score  = 1
+|  Two letter two point word                          | "no"   |  Score = 2|
+|  Two letter three point word                       |  "go" |  Score = 3 |
+|  Repeating letter word                                      |  "food"                     |   Score = 7    |                   |  Repeating letter, all possible score arrays checked | "queen" | Score = 14 |
+
 
 
 * Phase 4 - Initial Silex framework with "Hello" on home page
-* Phase 5 - Create twig framework with a form to enter word, and output the score. 
+* Phase 5 - Create twig framework with a form to enter word, and output the score.
 
 * End specifications

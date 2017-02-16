@@ -16,19 +16,19 @@ require_once "src/Scrabble.php";
             $this->AssertEquals(1, $result);
         }
 
-        // function test_()
-        // {
-        //   $test_arrays = new Scrabble;
-        //   //Arrange
-        //   $input = "hello";
-        //
-        //   $test_arrays->wordScore($input);
-        //   //Act
-        //   $result = $test_arrays->wordScore($input);
-        //   //Assert
-        //   $this->AssertEquals(["E","L","L","O"], $result);
-        //
-        // }
+        function test_go()
+        {
+          $test_arrays = new Scrabble;
+          //Arrange
+          $input = "no";
+
+          $test_arrays->wordScore($input);
+          //Act
+          $result = $test_arrays->wordScore($input);
+          //Assert
+          $this->AssertEquals(2, $result);
+
+        }
 
 }
  ?>

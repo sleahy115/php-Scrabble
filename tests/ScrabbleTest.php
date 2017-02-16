@@ -3,7 +3,7 @@
 require_once "src/Scrabble.php";
     class ScrabbleTest extends PHPUnit_Framework_TestCase
     {
-        function test_wordScore()
+        function test_toUpperSplit()
         {
             $test_word = new Scrabble;
             //Arrange
@@ -13,7 +13,8 @@ require_once "src/Scrabble.php";
             //Act
             $result = $test_word->wordScore($input);
             //Assert
-            $this->AssertEquals(["h","e","l","l","o"], $result);
+            $this->AssertEquals(["H","E","L","L","O"], $result);
         }
-    }
+
+}
  ?>

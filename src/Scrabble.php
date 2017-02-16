@@ -3,7 +3,7 @@
   {
     function wordScore($word)
     {
-      $word = str_split($word);
+      $word = str_split(strtoupper($word));
       return $word;
     }
   }

@@ -15,6 +15,12 @@
    return $app['twig']->render('scrabble-home.html.twig');
 
     });
+    $app->post("/score", function() use ($app) {
+    $new_score = new Scrabble($_POST['word']);
+
+    return $app['twig']->render('scrabble-score.html.twig', array("score"=>Scrabble:: wordScore($_POST['word'])));
+
+     });
 
     return $app;
 

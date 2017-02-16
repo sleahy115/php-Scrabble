@@ -13,7 +13,7 @@
       return $this->$word;
     }
 
-    function wordScore($word)
+    static function wordScore($word)
     {
     $score = preg_match_all('/[A, E, I, O, U, L, N, R, S, T]/i',$word);
     $total = $score*1;
